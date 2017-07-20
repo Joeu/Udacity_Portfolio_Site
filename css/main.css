@@ -1,0 +1,250 @@
+/*
+*
+* Common
+*
+*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+    margin: 0; 
+}
+
+header, nav, footer, section, article, div {
+    box-sizing: border-box;
+}
+
+img, embed, object, video {
+    max-width: 100%;
+}
+
+figcaption {
+    text-align: center;
+}
+
+/*
+*
+* Header
+*
+*/
+
+.header {
+    width: 100%;
+}
+
+.header__inner {
+    margin-top: 30px;
+    margin-left: 20%;
+    margin-right: 10%;
+}
+
+.header__inner hr {
+    margin-top: 25px;
+    border: none;
+    height: 3px;
+    background-color: gray;
+}
+
+.header__logo {
+    float: left;
+    height: auto;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.header__title {
+    font-weight: 300;
+    font-size: 4em;
+    margin: 0.1em 0.1em;
+    display: block;
+    text-align: right;
+}
+
+.header__subtitle {
+    font-weight: 300;
+    font-size: 1em;
+    margin: 0.1em 0.1em;
+    display: block;
+    text-align: right;
+}
+
+/*
+*
+* Container
+*
+*/
+
+.main__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*
+*
+* Nav
+*
+*/
+
+.nav {
+    width: 20%;
+    height: 100%;
+    vertical-align: top;
+}
+
+.nav__inner {
+    margin-left: 30%;
+    margin-right: 25%;
+}
+
+.nav button {
+    min-height: 48px;
+    min-width: 48px;
+    width: 80px;
+    height: 80px;
+    float: right;
+    border: none;
+    display: block;
+}
+
+.nav__subtitle {
+    float: right;
+    margin-left: 30%;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    font-size: 1.5em;
+    color: dimgrey;
+    text-align: right;
+}
+
+/*
+*
+* Main
+*
+*/
+
+.main {
+    width: 70%;
+    margin-right: 0;
+}
+
+.main__section {
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.section__title {
+    color: dimgrey;
+    font-weight: 300;
+    font-size: 3em;
+    margin: 0.1em 0.1em;
+    display: block;
+    text-align: left;
+}
+
+.secondary__section {
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+}
+
+.secondary__section figure {
+    margin-right: 10px;
+}
+
+.works__images_1 {
+    width: 100%;
+	  height: auto;
+    display: inline-block;
+}
+
+.works__images_2 {
+    width: 100%;
+	  height: auto;
+    display: inline-block;
+}
+
+.works__images_3 {
+    width: 100%;
+	  height: auto;
+    display: inline-block;
+    margin-right: 0px;
+}
+
+/*
+*
+* Media Queries
+*
+*/
+
+@media screen and (max-width: 320px) {
+
+    .header__title {
+        font-size: 1em;
+    }
+
+   .nav__subtitle {
+      font-size: 1em; 
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+
+    .header__title {
+        font-size: 2em;
+    }
+
+    .section__title { 
+        font-size: 2em; 
+    }
+
+    .header__logo {
+        width: 70px;
+        height: auto;
+    }
+
+   .nav__subtitle {
+      font-size: 1.2em; 
+    }
+
+    .works__images_1 {
+        border: 1px brown;
+        height: auto;
+        width: 100%;
+        content: url("../img/angular_block.png");
+    }
+
+    .works__images_2 {
+        border: 1px brown;
+        height: auto;
+        width: 100%;
+        content: url("../img/react_block.png");
+    }
+
+    .works__images_3 {
+        border: 1px brown;
+        height: auto;
+        width: 100%;
+        content: url("../img/sass_block.png");
+    }
+
+    figcaption {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+    .header__title {
+        font-size: 3em;
+    }
+}
