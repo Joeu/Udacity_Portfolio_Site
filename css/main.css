@@ -106,10 +106,12 @@ figcaption {
     min-height: 48px;
     min-width: 48px;
     width: 80px;
-    height: 80px;
+    height: 60px;
     float: right;
     border: none;
     display: block;
+    font-size: 1em;
+    margin-bottom: 5px;
 }
 
 .nav__subtitle {
@@ -137,6 +139,10 @@ figcaption {
     width: 100%;
     padding-top: 3%;
     padding-bottom: 3%;
+}
+
+article p {
+    font-family: Courier New, Courier, monospace;
 }
 
 .section__title {
@@ -181,18 +187,68 @@ figcaption {
 
 /*
 *
+* Footer
+*
+*/
+
+.footer__inner img{
+    padding: 5px;
+    display: block;
+    width: 50px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/*
+*
 * Media Queries
 *
 */
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 361px) {
 
     .header__title {
         font-size: 1em;
     }
 
-   .nav__subtitle {
-      font-size: 1em; 
+    .nav__subtitle {
+        font-size: 1em; 
+    }
+
+}
+
+@media screen and (max-width: 620px) {
+
+    .header {
+        width: 100%;
+    }
+
+    .header__inner {
+        width: 90%;
+        display: table;
+        margin: 0 auto;
+    }
+
+    .nav {
+        display: block;
+        width: 90%;
+    }
+
+    .main {
+        display: block;
+        width: 90%;
+        display: table;
+        margin: 0 auto;
+    }
+
+    .nav__inner {
+        margin-left: auto;
+    }
+
+    .nav button {
+        height: 48px;
+        margin-right: 2px;
     }
 
 }
@@ -235,10 +291,6 @@ figcaption {
         height: auto;
         width: 100%;
         content: url("../img/sass_block.png");
-    }
-
-    figcaption {
-        display: none;
     }
 
 }
